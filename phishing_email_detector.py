@@ -13,27 +13,27 @@ email_flag = email_subject.lower()
 # 'immediate action recuired and if those flags are present, prints HIGH Risk statement
 if 'urgent' in email_flag or email_subject == 'URGENT' or email_subject == 'immediate action required':
     
-    print("SECURITY ASSESSMENT:\nHIGH RISK: Possible phishing attempt.")
+    print("\nSECURITY ASSESSMENT:\nHIGH RISK: Possible phishing attempt.")
     print("------------------------")
-    print(f"Analyzed subject: {email_subject}")
+    print(f"Analyzed subject: \"{email_subject}\"")
     
 elif 'win' in email_flag or 'free' in email_flag:
     
-    print("SECURITY ASSESSMENT:\nMEDIUM RISK: Suspicious offer detected.")
+    print("\nSECURITY ASSESSMENT:\nMEDIUM RISK: Suspicious offer detected.")
     print("------------------------")
-    print(f"Analyzed subject: {email_subject}")
+    print(f"Analyzed subject: \"{email_subject}\"")
     
 elif 'password reset' in email_flag:
     
-    print("SECURITY ASSESSMENT:\nLOW RISK: Verify legitimacy with sender.")
+    print("\nSECURITY ASSESSMENT:\nLOW RISK: Verify legitimacy with sender.")
     print("------------------------")
     print(f"Analyzed subject: {email_subject}")
     
 else:
     
-    print("No phishing indicators detected.")
+    print("\nNo phishing indicators detected.")
     print("------------------------")
-    print(f"Analyzed subject: {email_subject}")
+    print(f"Analyzed subject: \"{email_subject}\"")
     
     
     
