@@ -27,7 +27,7 @@ elif 'password reset' in email_flag:
     
     print("\nSECURITY ASSESSMENT:\nLOW RISK: Verify legitimacy with sender.")
     print("------------------------")
-    print(f"Analyzed subject: {email_subject}")
+    print(f"Analyzed subject: \"{email_subject}\"")
     
 else:
     
