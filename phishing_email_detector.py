@@ -11,7 +11,7 @@ email_flag = email_subject.lower()
 
 # if clause checking for all caps or all lowercase for the word urgent and also
 # 'immediate action recuired and if those flags are present, prints HIGH Risk statement
-if 'urgent' in email_flag or email_subject == 'URGENT' or email_subject == 'immediate action required':
+if 'urgent' in email_flag or email_subject == 'URGENT' or email_subject in 'immediate action required':
     
     print("\nSECURITY ASSESSMENT:\nHIGH RISK: Possible phishing attempt.")
     print("------------------------")
